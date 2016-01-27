@@ -9,8 +9,8 @@ data <- subset(runcit, Nama.Varieti == x)
 
 sort_data <- data[order(-data$Harga.Purata),]
 
-temp <- sort_data[,c(5,7,8)]
-names(temp) <- c("Price", "City", "State")
+temp <- sort_data[,c(5,7,8, 9)]
+names(temp) <- c("Price", "City", "State", "Date")
 
 goods_table <- data.table(temp)
 goods_table
